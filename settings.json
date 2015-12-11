@@ -1,0 +1,56 @@
+{
+    "rabbitmq": {
+        "exchange-name": "stat_persistor_exchange",
+        "queue-name": "raspberry",
+        "broker-url": "amqp://user:password@servername/"
+    },
+    "logger": {
+        "version": 1,
+        "disable_existing_loggers": "False",
+        "formatters": {
+            "default": {
+                "format": "[%(asctime)s] [%(levelname)5s] [%(process)5s] [%(name)10s] %(message)s"
+            }
+        },
+        "handlers": {
+            "default": {
+                "level": "DEBUG",
+                "class": "logging.StreamHandler",
+                "formatter": "default"
+            }
+        },
+        "loggers": {
+            "": {
+                "handlers": ["default"],
+                "level": "DEBUG",
+                "propagate": "True"
+            }
+        }
+    },
+    "gpio":{
+        "delay": 0.05
+    },
+    "regions":{
+        "le-de-France": {"channel": 16, "coverages": ["fr-idf", "transilien"], "max_hits": 30},
+        "Alsace": {"channel": 29, "coverages": ["fr-ne", "fr-ne-c"], "max_hits": 30},
+        "Aquitaine": {"channel": 31, "coverages": ["eu-euskadi", "fr-sw-bordeaux", "fr-sw", "fr-sw-c"], "max_hits": 30},
+        "Auvergne": {"channel": 12, "coverages": ["fr-auv", "fr-se", "fr-se-c"], "max_hits": 30},
+        "Basse-Normandie": {"channel": 11, "coverages": ["fr-ban", "fr-nw", "fr-nw-c"], "max_hits": 30},
+        "Bourgogne": {"channel": 18, "coverages": ["fr-bou", "fr-ne", "fr-ne-c"], "max_hits": 30},
+        "Bretagne": {"channel": 7, "coverages": ["fr-bre", "fr-nw-rennes", "fr-nw-lorient", "fr-nw", "fr-nw-c"], "max_hits": 30},
+        "Centre-Val de Loire": {"channel": 22, "coverages": ["fr-cen", "fr-nw", "fr-nw-c"], "max_hits": 30},
+        "Champagne-Ardenne": {"channel": 29, "coverages": ["fr-cha", "fr-ne", "fr-ne-c"], "max_hits": 30},
+        "Franche-Comte": {"channel": 18, "coverages": ["fr-ne", "fr-ne-c"], "max_hits": 30},
+        "Haute-Normandie": {"channel": 11, "coverages": ["fr-nw", "fr-nw-c"], "max_hits": 30},
+        "Languedoc-Roussillon": {"channel": 33, "coverages": ["fr-se", "fr-se-c"], "max_hits": 30},
+        "Limousin": {"channel": 31, "coverages": ["fr-sw", "fr-sw-c"], "max_hits": 30},
+        "Lorraine": {"channel": 29, "coverages": ["fr-ne", "fr-ne-c"], "max_hits": 30},
+        "Midi-Pyrenees": {"channel": 33, "coverages": ["fr-mip", "fr-sw", "fr-sw-c"], "max_hits": 30},
+        "Nord-Pas-de-Calais": {"channel": 15, "coverages": ["fr-npdc", "fr-ne", "fr-ne-c", "fr-59"], "max_hits": 30},
+        "Picardie": {"channel": 15, "coverages": ["fr-ne-amiens", "fr-ne", "fr-ne-c"], "max_hits": 30},
+        "Pays de la Loire": {"channel": 13, "coverages": ["fr-pdl", "fr-nw", "fr-nw-c"], "max_hits": 30},
+        "Poitou-Charentes": {"channel": 31, "coverages": ["fr-poc", "fr-sw", "fr-sw-c"], "max_hits": 30},
+        "Provence-Alpes-Cote d'Azur": {"channel": 35, "coverages": ["fr-se", "fr-se-c"], "max_hits": 30},
+        "Rhone-Alpes": {"channel": 12, "coverages": ["lyon", "fr-se", "fr-se-c"], "max_hits": 30}
+    }
+}
