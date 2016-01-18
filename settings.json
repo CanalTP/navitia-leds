@@ -1,7 +1,6 @@
 {
     "rabbitmq": {
         "exchange-name": "stat_persistor_exchange",
-        "queue-name": "raspberry",
         "broker-url": "amqp://user:password@servername/"
     },
     "logger": {
