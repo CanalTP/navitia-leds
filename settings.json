@@ -44,7 +44,7 @@
         "Languedoc-Roussillon": {"channel": 33, "coverages": ["fr-se", "fr-se-c"], "max_hits": 30},
         "Limousin": {"channel": 31, "coverages": ["fr-sw", "fr-sw-c"], "max_hits": 30},
         "Lorraine": {"channel": 29, "coverages": ["fr-ne", "fr-ne-c"], "max_hits": 30},
-        "Midi-Pyrenees": {"channel": 33, "coverages": ["fr-mip", "fr-sw", "fr-sw-c"], "max_hits": 30},
+        "Midi-Pyrenees": {"channel": 37, "coverages": ["fr-mip", "fr-sw", "fr-sw-c"], "max_hits": 30},
         "Nord-Pas-de-Calais": {"channel": 15, "coverages": ["fr-npdc", "fr-ne", "fr-ne-c", "fr-59"], "max_hits": 30},
         "Picardie": {"channel": 15, "coverages": ["fr-ne-amiens", "fr-ne", "fr-ne-c"], "max_hits": 30},
         "Pays de la Loire": {"channel": 13, "coverages": ["fr-pdl", "fr-nw", "fr-nw-c"], "max_hits": 30},
