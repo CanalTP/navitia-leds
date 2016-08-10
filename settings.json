@@ -1,6 +1,6 @@
 {
     "rabbitmq": {
-        "exchange-name": "stat_persistor_exchange",
+        "exchange-name": "stat_persistor_exchange_topic",
         "broker-url": "amqp://user:password@servername/"
     },
     "logger": {
