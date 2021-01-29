@@ -1,4 +1,4 @@
 protobuf==2.6.0
-requests==2.3.0
+requests==2.24.0
 kombu==3.0.22
 amqp==1.4
